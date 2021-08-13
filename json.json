@@ -1,0 +1,19 @@
+{
+    "id": 32,
+    "name": "1.Carette V1",
+    "description_sale": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat rutrum nisl sit amet gravida. Proin non varius nisi, sit amet congue purus. Nunc ut risus a dolor dictum lacinia. Phasellus lobortis efficitur massa, eget interdum libero fermentum eget. Cras quam lectus, mollis et quam ut, sollicitudin feugiat quam. Proin dui ex, ultricies convallis erat non, aliquam pharetra nulla. Proin dapibus ut magna ut commodo. Mauris non libero vel tortor consequat bibendum.",
+    "list_price": 1,
+    "attribute_line_ids": [
+        6,
+        8
+    ],
+    "0": "Couleur",
+    "1": "Couleur: Bleu",
+    "2": "Couleur: Vert",
+    "3": "Couleur: Jaune",
+    "4": "Mat\u00e9riaux",
+    "5": "Mat\u00e9riaux: Bois",
+    "6": "Mat\u00e9riaux: Aluminium",
+    "7": "Mat\u00e9riaux: PVC",
+    "8": "Mat\u00e9riaux: Plastique"
+}

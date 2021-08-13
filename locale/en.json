@@ -1,0 +1,19 @@
+{
+  "TEXT_WELCOME": "you are in the app in english",
+  "BUTTON_CONNECT": "sign in",
+  "BUTTON_OWNER": "I have a Caret",
+  
+  
+  "DRAWER_WELCOME": "Discover Carette Bike!",
+  "DRAWER_ABOUT": "About us",
+  "DRAWER_CUSTOM_CARETTE": "Custom your Caret",
+  "DRAWER_SHOP": "Shop",
+  "DRAWER_SIGN_IN": "Sign in",
+  "DRAWER_SIGN_UP": "Sign up",
+
+  "STACK_WELCOME": "Discover Carette",
+  "STACK_ABOUT": "Buy a caret",
+  "STACK_SIGN_IN": "Sign in",
+  "STACK_SIGN_UP": "Sign up",
+  "STACK_FORGOTTEN_PASSWORD": "forgotten password"
+}

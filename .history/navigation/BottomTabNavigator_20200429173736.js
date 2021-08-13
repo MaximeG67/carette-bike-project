@@ -1,0 +1,84 @@
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import * as React from 'react';
+
+import TabBarIcon from '../components/TabBarIcon';
+import HomeScreen from '../screens/HomeScreen';
+import ProductsScreen from '../screens/ProductsScreen';
+import TopMenu from '../components/TopMenu'
+import { Container, Navbar } from 'navbar-native';
+
+const BottomTab = createBottomTabNavigator();
+const INITIAL_ROUTE_NAME = 'Home';
+
+export default function BottomTabNavigator({ navigation, route }) {
+  // Set the header title on the parent stack navigator depending on the
+  // currently active tab. Learn more in the documentation:
+  // https://reactnavigation.org/docs/en/screen-options-resolution.html
+  navigation.setOptions({ headerTitle: props => getHeaderTitle(route) });
+
+  return (
+    <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
+      <BottomTab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          title: 'Get Started',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Links"
+        component={ProductsScreen}
+        options={{
+          title: 'shopping',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
+        }}
+      />
+    </BottomTab.Navigator>
+  );
+}
+
+function getHeaderTitle(route) {
+  const routeName = route.state?.routes[route.state.index]?.name ?? INITIAL_ROUTE_NAME;
+
+  switch (routeName) {
+    case 'Home':
+  return (<Container>
+    <Navbar
+        title={"Navbar Native"}
+        left={{
+            icon: "ios-arrow-back",
+            label: "Back",
+            onPress: () => {alert('Go back!')}
+        }}
+        right={[{
+            icon: "ios-search",
+            onPress: () => {alert('Search!')}
+        },{
+            icon: "ios-menu",
+            onPress: () => {alert('Toggle menu!')}
+        }]}
+    />
+    ... other stuff ...
+</Container>);
+    case 'Links':
+      return (<Container>
+        <Navbar
+            title={"Navbar Native"}
+            left={{
+                icon: "ios-arrow-back",
+                label: "Back",
+                onPress: () => {alert('Go back!')}
+            }}
+            right={[{
+                icon: "ios-search",
+                onPress: () => {alert('Search!')}
+            },{
+                icon: "ios-menu",
+                onPress: () => {alert('Toggle menu!')}
+            }]}
+        />
+        ... other stuff ...
+    </Container>);
+  }
+}
